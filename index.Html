@@ -1,16 +1,26 @@
-// Seleciona o botão através do ID
-const botaoLike = document.getElementById('btn-like');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Sustentável - Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-// Adiciona um evento de clique ao botão
-botaoLike.addEventListener('click', function() {
-    
-    // O 'toggle' adiciona a classe se ela não existir, ou remove se já existir
-    botaoLike.classList.toggle('liked');
-    
-    // Verifica se o botão está com a classe 'liked' para mudar o texto
-    if (botaoLike.classList.contains('liked')) {
-        botaoLike.innerHTML = '<span>❤️</span> Favoritado!';
-    } else {
-        botaoLike.innerHTML = '<span>❤️</span> Favoritar';
-    }
-});
+    <div class="card">
+        <div class="card-tag">Sustentável</div>
+        <h2 class="card-title">Café Agroflorestal</h2>
+        <p class="card-description">
+            Produzido em sistema de ILPF, preservando a biodiversidade local e com pegada de carbono neutra.
+        </p>
+        <div class="card-actions">
+            <button id="btn-like" class="btn">
+                <span>❤️</span> Favoritar
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
