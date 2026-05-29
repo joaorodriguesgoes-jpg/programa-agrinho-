@@ -1,0 +1,67 @@
+/* Configurações gerais da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilização do Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    max-width: 300px;
+    border-left: 5px solid #2e7d32; /* Detalhe em verde agro */
+}
+
+/* Tag de destaque */
+.card-tag {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    color: #333333;
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+.card-description {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Botão interativo */
+.btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1b5e20;
+}
+
+/* Classe que o JavaScript vai adicionar dinamicamente */
+.btn.liked {
+    background-color: #e53935; /* Muda para vermelho ao curtir */
+}
